@@ -1,0 +1,209 @@
+/* Navigation Bar */
+ul#navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #9DCBD8;
+	margin-bottom: 1.25px;
+}
+
+li.navbaritem a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+a#selfprofile {
+	margin:2px;
+	float:right;
+}
+a#selfprofile:hover {
+	text-decoration: underline;
+}
+
+a#LP {
+	font-size: 1.3em;
+	float: left;
+	margin-left: 20px;
+}
+/* Navigation Bar END */
+
+/* Footer */
+footer {
+	border-color: rgb(228,228,228);
+	background-color: white;
+	background-color: #9DCBD8;
+	padding: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+footer p {
+	text-align: center;
+	margin: 5px;
+}
+/* Footer END */
+
+/* All the rest */
+body {
+	margin: 0;
+	background-color: #DBDBDB;
+}
+div#profilebackground {
+	height: 80%;
+}
+div#profilebackground img{
+	width: 100%;
+	height: 100%;
+    filter: blur(1.5px);
+} 
+
+div#profiledetails {
+	position: absolute;
+	width: 70%;
+	height: 50%;
+	top: 25%;
+	left: 15%;
+}
+div#profiledetails img {
+	border: 1px solid black;
+	width: 75px;
+	height: 75px;
+}
+div#profiledetails h1 {
+	display: inline;
+	margin-left: 0.5em;
+	font-size: 500%;
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+div#profiledetails h3 {
+	color: #c4c7c7;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+div#profiledetails p {
+	font-size: 150%;
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+div#samplepostcontainer {
+	border: 1px solid black;
+}
+
+div#profileposts {
+	background-color: white;
+	background-color: #8BB7C3;
+	border-radius: 7px;
+	padding: 20px;
+	margin-top: 30px;
+	height: auto;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	width: 50%;
+	border: 1px solid black;
+}
+div#profileposts h3 {
+	display: inline;
+}
+div.samplepost {
+	background-color: white;
+	background-color:powderblue;
+	padding: 10px;
+}
+div#profileposts p.timepost {
+	float: right;
+	display: inline;
+	margin: 0;
+}
+div#profileposts p.postcontent {
+	margin: 0;
+	margin-left: 50px;
+	padding: 5px;
+}
+.samplepost:nth-child(even){
+	background-color: skyblue;
+}
+
+div.samplepost:hover {
+	cursor: pointer;
+}
+div#postsandinfo{
+	display:flex;
+}
+div#personalinfo{
+	position: relative;
+	margin-top: 30px;
+	margin-left: 200px;
+	text-align: center;
+}
+table#tablepersonalinfo {
+	border-collapse: collapse;
+	background-color: #B7E5EF;
+	border: 1px solid black;
+}
+div p.timepost{
+	font-style: italic;
+}
+table#tablepersonalinfo td,th {
+	padding: 10px;
+}
+table#tablepersonalinfo th:not(#aboutme) {
+	text-align: right;
+}
+table#tablepersonalinfo #aboutme {
+	background-color: #8ABCDC;
+}
+p#activitytag{
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+	
+}
+h5 {
+	color: #4E4E4E;
+	display: inline;
+}
+
+.samplepost button{
+	float:right;
+	border:none;
+	border-radius: 3.5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 0.80em;
+	background-color: #5FBEFC;
+	color:white;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.samplepost button:hover{
+	background-color: #e7e7e7;
+	color:black;
+}
+hr {
+	border-top: 1px dotted blue;
+	border-bottom: 1px dotted #fff;
+}
+#report {
+	margin-top: 25px;
+	width: 25%;
+	background-color: white;
+	border-radius: 3.5px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-top-style: inset;
+	border-left-style: inset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	padding: 3px;
+}
+#report:hover {
+	background-color: coral;
+	color: white;
+}
+/* END */
