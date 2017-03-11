@@ -1,0 +1,167 @@
+body{
+	background-image: url("sakura_cherry_blossom-wallpaper-1680x1260.jpg");
+	background-size: 100% auto;
+}
+
+nav {
+	background: rgba(0,0,0,0.55);
+}
+nav ul {
+	list-style-type: none;
+    margin-left: 25%;
+    padding: 0px;
+    overflow: hidden;
+	text-align:left;
+	position: relative;
+}
+
+nav li {
+    float: right;
+}
+nav h1{
+	color: pink;
+	float: left;
+	text-align: left;
+	display: block;
+	margin: 0px;
+	width:auto;
+    overflow: hidden;
+	position: absolute;
+	font-size: 41px;
+	font-family: Impact;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111111;
+}
+
+.login-form {
+	padding: 20px;
+	background-color: white;
+	border-style: outset;
+	border-width: 5px;
+	border-radius: 10px;	
+}
+div#loginregister {
+    width: 300px;
+    position: absolute;
+    right: 20px;	
+}
+
+div#loginregister > div {
+	margin-bottom: 20px;
+}
+
+div#loginuserpass label{
+	font-family: Lucida;
+	font-size: 20px;
+	color:black;
+}
+
+div#loginuserpass input{
+	margin-top: 5px;
+	width: 97%;
+	height: 4%;
+}
+
+div#loginuserpass input:focus {
+	box-shadow: 3px 3px 3px #888888;
+	width: 100%;
+}
+
+#btnlogin {
+	margin-top:10px;
+	margin-left: 25%;
+	border-radius: 10px;
+	width: 50%;
+	height: 5%;
+	background-color: #00CED1;
+	opacity: 0.7;
+	font-family: Lucida;
+	font-size: 20px;
+}
+#btnlogin button:hover {
+	opacity: 1;
+}
+
+#register {
+	margin-top:10px;
+	margin-left: 25%;
+	border-radius: 10px;
+	width: 50%;
+	height: 5%;
+	background-color: #00CED1;
+	opacity: 0.7;
+	font-family: Lucida;
+	font-size: 18px;
+}
+
+span.error{
+	color: Red;
+	visibility: hidden;
+}
+
+
+div#loginuserpass button:hover {
+	opacity: 1;
+}
+
+div#register label{
+	font-family: Lucida;
+	font-size: 20px;
+	color:black;
+
+}
+div#userinfo input{
+	margin-top: 10px;
+	width: 90%;
+	height: 5%;
+}
+
+div#userinfo input:focus {
+	box-shadow: 3px 3px 3px #888888;
+	width: 93%;
+}
+
+div#register button {
+	margin-top:10px;
+	margin-left: 25%;
+	border-radius: 10px;
+	width: 50%;
+	height: 5%;
+	background-color: #00CED1;
+	opacity: 0.7;
+	font-family: Lucida;
+	font-size: 20px;
+}
+
+div#register button:hover {
+	opacity: 1;
+}
+
+div#content{
+	position:absolute;
+	padding: 25px;
+}
+@font-face {
+    font-family: Cookie;
+    src: url('./Cookie.ttf');
+}
+
+ul#subcontents{
+	margin-top: 10px;
+	margin-left: 70px;
+	font-family: Cookie;
+	color: White;
+	font-size: 60px;
+	list-style: none;
+	text-shadow: 3px 3px Black;
+}

@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	</head>
+	
+	<body>
+		<nav>
+			<h1>  Love Lost </h1>
+			<ul>	
+				<li><a href="#about">About</a></li>
+				<li><a href="#askus">Ask Us</a></li>
+				<li><a href="#home"> Home </a></li>
+			</ul>
+		</nav>
+		<div id="loginregister">
+			<div id="loginuserpass" class="login-form">
+					<label for="username" id=lblusername>Username <span class="error" id="error1">*</span></label><br>
+					<input type="text" id="usernamebox"><br>
+					<label for="password" id=lblpassword>Password <span class="error" id="error2">*</span></label><br>
+					<input type="password" id="passwordbox"><br>
+					<button type="button" id="btnlogin">Login</button><br>
+			</div>
+			<div id="registerinfos" class="login-form">
+				<div id="userinfo">
+					<label for="signup">Sign Up</label><br>
+					<input type="text" id="firstname" placeholder="First Name..."><span class="error" id="error3">*</span><br>
+					<input type="text" id="lastname" placeholder="Last Name..."><span class="error" id="error4">*</span><br>
+					<input type="text" id="email" placeholder="Email Address..."><span class="error" id="error5">*</span><br>
+					<input type="text" id="newusernamebox" placeholder="Username..."><span class="error" id="error6">*</span><br>
+					<input type="password" id="newpasswordbox" placeholder="Password..."><span class="error" id="error7">*</span><br>
+					<input type="password" id="confirmpassword" placeholder="Confirm Password..."><span class="error" id="error8">*</span><br>
+				</div>
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="female">Female</label><span class="error" id="error9">*</span><br>
+					<button type="button" name="button" id="register">Register</button><br>
+			</div>
+		</div>
+		<div id="content">
+			<ul id="subcontents">
+				<li> Help the broken hearted </li>
+				<li> Share personal stories </li>
+				<li> Share love life issues </li>
+				<li> Connect with friends </li>
+				<li> Make new friends </li>
+				<li> Give advices </li>
+			</ul>
+		</div>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btnlogin").click(function(){
+					if($("#usernamebox").val().length==0){
+						$("#error1").css("visibility", "visible");
+					}
+					if($("#passwordbox").val().length==0){
+						$("#error2").css("visibility", "visible");
+					}
+					if($("#usernamebox").val().length!=0){
+						$("#error1").css("visibility", "hidden");
+					}
+					if($("#passwordbox").val().length!=0){
+						$("#error2").css("visibility", "hidden");
+					}
+				});
+				
+				$("#register").click(function(){
+					if($("#firstname").val().length==0){
+						$("#error3").css("visibility", "visible");
+					}
+					if($("#lastname").val().length==0){
+						$("#error4").css("visibility", "visible");
+					}
+					if($("#email").val().length==0){
+						$("#error5").css("visibility", "visible");
+					}
+					if($("#newusernamebox").val().length==0){
+						$("#error6").css("visibility", "visible");
+					}
+					if($("#newpasswordbox").val().length==0){
+						$("#error7").css("visibility", "visible");
+					}
+					if($("#confirmpassword").val().length==0){
+						$("#error8").css("visibility", "visible");
+					}
+					if($("#firstname").val().length!=0){
+						$("#error3").css("visibility", "hidden");
+					}
+					if($("#lastname").val().length!=0){
+						$("#error4").css("visibility", "hidden");
+					}
+					if($("#email").val().length!=0){
+						$("#error5").css("visibility", "hidden");
+					}
+					if($("#newusernamebox").val().length!=0){
+						$("#error6").css("visibility", "hidden");
+					}
+					if($("#newpasswordbox").val().length!=0){
+						$("#error7").css("visibility", "hidden");
+					}
+					if($("#confirmpassword").val().length!=0){
+						$("#error8").css("visibility", "hidden");
+					}
+					if($("#newpasswordbox").val()!=$("#confirmpassword").val()){
+						$("#confirmpassword").css("background-color", "F18B61");
+					}
+					if($("#newpasswordbox").val()==$("#confirmpassword").val()){
+						$("#confirmpassword").css("background-color", "white");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
