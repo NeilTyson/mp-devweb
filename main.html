@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	
+	<body>
+		<ul id="navbar">
+			<li class="navbaritem"><a href="#home" id="LP">Love Lost</a></li>
+			<li class="navbaritem"><a href="#ownprofile" id="selfprofile">The_Astronaut</a></li>
+		</ul>
+		<div id="content">	
+			<div id="stories" class="category">
+				<button class="accordion">Love Stories</button>
+					<div class="threads">
+						<ul class="thread-links">
+							<li>
+							<div class="tlink">
+							<a href="">
+							Thread: Test Test</a>
+							</div>
+							
+							<div class="tdatepost">
+								<span> <a href="">Kabylake</a>
+								January 3, 2017</span>
+							</div>
+
+							</li>							
+						</ul>
+					</div>
+			</div>
+			
+			<div id="seekadvice" class="category">
+				<button class="accordion">Advice Seekers</button>
+					<div class="threads">
+						<p>Threads here</p>
+				</div>
+			</div>
+			
+			<div id="genadvice" class="category">
+				<button class="accordion">General Advices</button>
+					<div class="threads">
+						<p>Threads here</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">  <!-- div for footer -->
+			<footer>
+				<p> Love Lost is a place for all those who feels love, is loved, and was loved. </p>
+			</footer>
+		</div>
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].onclick = function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+				  panel.style.maxHeight = null;
+				} else {
+				  panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			  }
+			}
+		</script>
+	</body>
+	
+</html>

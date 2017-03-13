@@ -1,0 +1,177 @@
+body{
+	background-color: white;
+	background-image: url(bg-image1.jpg);
+	background-size: 100%;
+	margin: 0 auto;
+	background-color: #DBDBDB;
+	font-size:12px;
+	font-family: Verdana, sans serif;
+}
+a{
+	text-decoration:none;
+}
+/* nav */
+ul#navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #9DCBD8;
+	margin-bottom: 1.25px;
+}
+li.navbaritem a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+a#selfprofile {
+	margin:2px;
+	float:right;
+}
+a#selfprofile:hover {
+	text-decoration: underline;
+}
+
+a#LP {
+	font-size: 1.3em;
+	float: left;
+	margin-left: 20px;
+}
+ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+/* 
+nav {
+	background: rgba(0,0,0,0.55);
+}
+nav ul {
+	list-style-type: none;
+    margin-left: 25%;
+    padding: 0px;
+    overflow: hidden;
+	text-align:left;
+	position: relative;
+}
+
+nav li {
+    float: right;
+}
+nav h1{
+	color: pink;
+	float: left;
+	text-align: left;
+	display: block;
+	margin: 0px;
+	width:auto;
+    overflow: hidden;
+	position: absolute;
+	font-size: 41px;
+	font-family: Impact;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111111;
+}
+ */
+#searchbox{
+	margin-top: 12px;
+	height: 25px;
+}
+#btnsearch{
+	margin: 12px;
+	height:25px;
+	opacity: 0.9;
+}
+#btnsearch:hover {
+    opacity: 1;
+}
+
+div#content {
+	width: 80%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.85;
+	border: 5px solid black;
+	padding: 4px;
+}
+
+.category{
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+button.accordion {
+    background: #252525 url(bg-maintitle.png) repeat-x top center;
+	height: 40px;
+    color: white;
+	text-shadow: rgba(0,0,0,0.4) 0px -1px 0px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+	font-size: 20px;
+	font-weight: 300;
+	border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+div.threads
+{	
+	border: 5px;
+	border-radius: 4px;
+	border-color: black;
+    background-color: white;
+	height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	font-size:12px;
+	padding-left:10px;
+	width: 98.65%;
+	margin: 0 auto;
+}
+.thread-links li {
+	padding: 5px;
+	width: 100%;
+}
+.tlink{
+	text-overflow: ellipsis;
+	width: 70%;
+	float: left;
+}
+.tdatepost{
+	width: 10%;
+	float: right;
+}
+.tdatepost span{
+	margin: 0;
+}
+/* footer */
+footer {
+	border-color: rgb(228,228,228);
+	background-color: white;
+	padding: 5px;
+	background-color: #9DCBD8;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+footer p {
+	text-align: center;
+	margin: 5px;
+}
